@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+body {
+    background: rgb(237, 168, 40);
+    display: flex;
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 15px;
+    height: 100vh;
+    width: 75%;
+}
+
+#canvas {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 150px;
+}
+
+
+.controls {
+    border: 3px solid rgb(34, 34, 34);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 25px;
+    align-items: center;
+    gap: 15px;
+}
+
+.result {
+    padding: 25px;
+}
+
+input,
+button {
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgb(34, 34, 34);
+    outline: nones;
+    color: rgb(34, 34, 34);
+}
+
+input::placeholder {
+    opacity: 1;
+    color: rgb(34, 34, 34);
+}
+
+button {
+    border: 3px solid rgb(34, 34, 34);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: rgb(34, 34, 34);
+    transition: 0.3s;
+    color: rgb(237, 168, 40);
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
